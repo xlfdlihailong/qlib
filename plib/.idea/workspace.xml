@@ -21,7 +21,11 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-4m3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1h7b9OagJ68iIJnnJHIk8zIu2pF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,7 +48,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -116,11 +120,17 @@
       <workItem from="1608540593450" duration="12504000" />
       <workItem from="1608629893250" duration="604000" />
       <workItem from="1608688688643" duration="13000" />
+      <workItem from="1608730138107" duration="21000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="616" y="216" key="#Deployment" timestamp="1602076912335">
@@ -191,13 +201,13 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1751" height="440" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1608560476475" />
-    <state x="1266" y="486" width="1013" height="751" key="SettingsEditor" timestamp="1608546150562">
+    <state x="1266" y="486" width="1013" height="751" key="SettingsEditor" timestamp="1608730158536">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="667" y="259" width="1013" height="751" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1607525203446" />
     <state x="453" y="211" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1602641797544" />
     <state x="483" y="203" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1606363736228" />
-    <state x="1266" y="486" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1608546150562" />
+    <state x="1266" y="486" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1608730158536" />
     <state x="858" y="619" key="SettingsEditor/0.0.2880.1580@0.0.2880.1580" timestamp="1602254262972" />
     <state x="1505" y="646" key="publish.login" timestamp="1601345049789">
       <screen x="0" y="0" width="2560" height="1400" />
