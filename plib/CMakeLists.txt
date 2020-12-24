@@ -20,7 +20,7 @@ add_executable(plib
         tinyxml.cpp
         tinyxml.h
         tinyxmlerror.cpp
-        tinyxmlparser.cpp test/testudp.h ptcp.cpp ptcp.h)
+        tinyxmlparser.cpp test/testudp.h ptcp.cpp ptcp.h test/testptime.h test/testserialization.h test/testptcp.h test/testpudp.h)
 target_link_libraries(${PROJECT_NAME} -lpthread)
 #target_link_libraries(${PROJECT_NAME} /usr/lib64/mysql/libmysqlclient.a)
 target_link_libraries(${PROJECT_NAME} -lmysqlclient)

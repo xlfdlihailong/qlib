@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3"/>
+				<Option working_dir="/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3"/>
+				<Option working_dir="/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="plib">
-				<Option output="/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/plib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3"/>
+				<Option output="/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/plib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 plib"/>
-					<CompileFile command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 plib"/>
+					<CompileFile command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="plib/fast">
-				<Option output="/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/plib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3"/>
+				<Option output="/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/plib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,84 +67,84 @@
 					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 plib/fast"/>
-					<CompileFile command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 plib/fast"/>
+					<CompileFile command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3"/>
+				<Option working_dir="/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.xqWms7LqSq/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j32 -f &quot;/tmp/tmp.rNEcPqRCQQ/cmake-build-debug-4m3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/clib.c">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/clib.c">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/clib.h">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/clib.h">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/mainplib.cpp">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/mainplib.cpp">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/plib.cpp">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/plib.cpp">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/plib.h">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/plib.h">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/pmysql.cpp">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/pmysql.cpp">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/pmysql.h">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/pmysql.h">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/ptcp.cpp">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/ptcp.cpp">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/ptcp.h">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/ptcp.h">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/pudp.cpp">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/pudp.cpp">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/pudp.h">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/pudp.h">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/pxml.cpp">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/pxml.cpp">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/pxml.h">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/pxml.h">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/test/testudp.h">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/test/testudp.h">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/tinystr.cpp">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/tinystr.cpp">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/tinystr.h">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/tinystr.h">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/tinyxml.cpp">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/tinyxml.cpp">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/tinyxml.h">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/tinyxml.h">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/tinyxmlerror.cpp">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/tinyxmlerror.cpp">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/tinyxmlparser.cpp">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/tinyxmlparser.cpp">
 			<Option target="plib"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.xqWms7LqSq/CMakeLists.txt">
+		<Unit filename="/tmp/tmp.rNEcPqRCQQ/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -7401,7 +7401,7 @@ int ctcpConnect(ctcp *ptcp) {
     return ptcp->sock;
 }
 
-//2000-01-01 00:00:00.000
+//yyyy-mm-dd HH:MM:SS.sss,yyyy-mm-dd HH:MM:SS,yyyymmddHHMMSS,yyyymmddHHMMSSsss 4种
 xctime clib_getTimeFromString(const char *arrchTime) {
     char acyear[10];
     bzero(acyear, 10);

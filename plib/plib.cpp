@@ -1270,30 +1270,30 @@ ptime::ptime(const char *acTime) {
     //    this->time=c.getTimeFromString(acTime);
     this->time = clib_getTimeFromString(acTime);
 }
-pstring ptime::getTimeNow() {
+pstring ptime::getStringTimeNow() {
     pstring strTimeNow=plib::getTimeNow();
 //    hlog(strTimeNow);
     return strTimeNow.substr(11,strTimeNow.size());
 }
 
-pstring ptime::getTimeNoMsNow() {
+pstring ptime::getStringTimeNowNoMs() {
     return plib::getTimeHHMMSS();
 }
 
-pstring ptime::getTimeFullNoMsNow() {
-    pstring strTimeFull=ptime::getTimeFullNow();
+pstring ptime::getStringTimeFullNowNoMs() {
+    pstring strTimeFull= ptime::getStringTimeFullNow();
     return strTimeFull.substr(0,strTimeFull.size()-4);
 }
 
-pstring ptime::getTimeFullNow() {
+pstring ptime::getStringTimeFullNow() {
     char acTime[22];
     bzero(acTime, 22);
     clib_getStringTimeNow(acTime);
     return string(acTime);
 }
 
-pstring ptime::getDateNow() {
-    string time = getTimeFullNow();
+pstring ptime::getStringDateNow() {
+    string time = getStringTimeFullNow();
     return time.substr(0, 10);
 }
 
@@ -1356,7 +1356,7 @@ ptime ptime::getTimeFromSeconds2000(int secs) {
 
 unsigned int ptime::getJS() {
     ptime tmnow;
-    string strdate = tmnow.toStringYYYYMMDD();
+    string strdate = tmnow.toStringDate();
 //    hlog(strdate);
     string timeres = strdate + " 00:00:00.000";
 //    hlog(timeres);
@@ -1462,17 +1462,37 @@ int ptime::getDaysBetween2Date(string date1, string date2) {
 //这是积日，军队项目要求从2000开始，用2字节存储
 unsigned short ptime::getJD() {
     ptime tnow;
-    string date = tnow.toStringYYYYMMDD();
+    string date = tnow.toStringDate();
     return getDaysBetween2Date(date, "2000-01-01");
 }
 
-pstring ptime::getTimeFullNowNoSplit() {
+pstring ptime::getStringTimeFullNowNoSplit() {
     return plib::getTimeNowNoSplit();
 }
 
-pstring ptime::getTimeFullNowNoSplitNoMs() {
+pstring ptime::getStringTimeFullNowNoSplitNoMs() {
     return plib::getTimeNowNoSplitNoMs();
 }
+
+pstring ptime::getStringTimeNowNoSplit() {
+    pstring info= ptime::getStringTimeNow();
+    pliststring lres= info.split(":.");
+    return lres.join("");
+}
+
+pstring ptime::getStringTimeNowNoSplitNoMs() {
+    pstring info= ptime::getStringTimeNowNoMs();
+    pliststring lres=info.split(":");
+    return lres.join("");
+}
+
+pstring ptime::getStringDateNowNoSplit() {
+    pstring info= ptime::getStringDateNow();
+    pliststring lres=info.split("-");
+    return lres.join("");
+}
+
+
 
 
 

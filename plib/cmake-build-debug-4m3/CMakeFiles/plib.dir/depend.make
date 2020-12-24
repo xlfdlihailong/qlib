@@ -26,11 +26,6 @@ CMakeFiles/plib.dir/ptcp.cpp.o: ../plib.h
 CMakeFiles/plib.dir/ptcp.cpp.o: ../ptcp.cpp
 CMakeFiles/plib.dir/ptcp.cpp.o: ../ptcp.h
 
-CMakeFiles/plib.dir/ptime.cpp.o: ../clib.h
-CMakeFiles/plib.dir/ptime.cpp.o: ../plib.h
-CMakeFiles/plib.dir/ptime.cpp.o: ../ptime.cpp
-CMakeFiles/plib.dir/ptime.cpp.o: ../ptime.h
-
 CMakeFiles/plib.dir/pudp.cpp.o: ../clib.h
 CMakeFiles/plib.dir/pudp.cpp.o: ../plib.h
 CMakeFiles/plib.dir/pudp.cpp.o: ../pudp.cpp

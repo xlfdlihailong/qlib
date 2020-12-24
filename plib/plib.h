@@ -2492,59 +2492,115 @@ public:
     //获取当前时间
     ptime();
 
-    //重新获取当前时间
+    //更新当前时间
     void setNowTime();
 
     ptime(int year, int mon, int day, int hour, int min, int sec, int ms);
 
-    //支持2020-12-02 12:12:12.232 和 2020-12-02 12:12:12 两种长度的,23 19 后续支持不带分隔符的
+    //yyyy-mm-dd HH:MM:SS.sss,yyyy-mm-dd HH:MM:SS,yyyymmddHHMMSS,yyyymmddHHMMSSsss 4种
     ptime(string strTime);
 
-    //支持2020-12-02 12:12:12.232 和 2020-12-02 12:12:12 两种长度的,23 19 后续支持不带分隔符的
+    //yyyy-mm-dd HH:MM:SS.sss,yyyy-mm-dd HH:MM:SS,yyyymmddHHMMSS,yyyymmddHHMMSSsss 4种
     ptime(const char *acTime);
 
-    //20200925213541562
-    static ptime getTimeFromStringNoSplit(pstring str) {
-        //先判断长度
-        if (str.size() != 17) {
-            hlog("长度不对");
-            return ptime();
-        }
-        pstring year = str.substr(0, 4);
-        pstring mon = str.substr(4, 2);
-        pstring day = str.substr(6, 2);
-        pstring hour = str.substr(8, 2);
-        pstring min = str.substr(10, 2);
-        pstring sec = str.substr(12, 2);
-        pstring ms = str.substr(14, 3);
-        return ptime(stoi(year), stoi(mon), stoi(day), stoi(hour), stoi(min),
-                     stoi(sec), stoi(ms));
+    //10种获取当前时间,日期的函数
+    //20200916111111
+    string toStringTimeFullNoSplitNoMs() {
+        pliststring lres = pstring(this->toStringTimeFullNoMs()).split(" -:");
+        return lres.join("");
     }
 
-    //20200916111111
-    static pstring getTimeFullNowNoSplitNoMs();
-
     //20200916111111999
-    static pstring getTimeFullNowNoSplit();
+    string toStringTimeFullNoSplit() {
+        pliststring lres = pstring(this->toStringTimeFull()).split("-: .");
+        return lres.join("");
+    }
 
     //2020-09-16 00:44:27
-    static pstring getTimeFullNoMsNow();
-
-    //00:44:27
-    static pstring getTimeNoMsNow();
-
-    //00:44:27.854
-    static pstring getTimeNow();
+    string toStringTimeFullNoMs() {
+        return pstring(this->toStringTimeFull()).split(".")[0];
+    }
 
     //2020-09-16 00:44:27.854
-    static pstring getTimeFullNow();
+    string toStringTimeFull() {
+        char acTime[20];
+        clib_getStringFromXtime(this->time, acTime);
+        return string(acTime);
+    }
+
+
+    //001122
+    string toStringTimeNoSplitNoMs() {
+        pliststring lres = pstring(this->toStringTimeNoMs()).split(":");
+        return lres.join("");
+    }
+
+    //001122999
+    string toStringTimeNoSplit() {
+        pliststring lres = pstring(this->toStringTime()).split(":.");
+        return lres.join("");
+    }
+
+    //00:44:27
+    string toStringTimeNoMs() {
+        return pstring(this->toStringTime()).split(".")[0];
+    }
+
+    //00:44:27.854
+    string toStringTime() {
+        return pstring(this->toStringTimeFull()).split(" ")[1];
+    }
+
+    //20200916
+    string toStringDateNoSplit() {
+        pstring info = this->toStringDate();
+        pliststring lres = info.split("-");
+        return lres.join("");
+    }
 
     //2020-09-16
-    static pstring getDateNow();
+    string toStringDate() {
+        pstring strall = this->toStringTimeFull();
+        return strall.substr(0, 10);
+    }
 
 
+    //10种获取当前时间,日期的静态函数
+    //20200916111111
+    static pstring getStringTimeFullNowNoSplitNoMs();
+
+    //20200916111111999
+    static pstring getStringTimeFullNowNoSplit();
+
+    //2020-09-16 00:44:27
+    static pstring getStringTimeFullNowNoMs();
+
+    //2020-09-16 00:44:27.854
+    static pstring getStringTimeFullNow();
+
+    //001122
+    static pstring getStringTimeNowNoSplitNoMs();
+
+    //001122999
+    static pstring getStringTimeNowNoSplit();
+
+    //00:44:27
+    static pstring getStringTimeNowNoMs();
+
+    //00:44:27.854
+    static pstring getStringTimeNow();
+
+    //20200916
+    static pstring getStringDateNowNoSplit();
+
+    //2020-09-16
+    static pstring getStringDateNow();
+
+
+    //原始获取时间差
     static double getDiff(clock_t t1, clock_t t2);
 
+    //从秒获取时间
     static ptime getTimeFromSeconds(int64_t secs);
 
     //此函数会返回从公元 1970 年1 月1 日的UTC 时间从0 时0 分0 秒算起到现在所经过的秒数
@@ -2598,23 +2654,14 @@ public:
 
     unsigned short msec();
 
-    string toString() {
-        char acTime[20];
-        clib_getStringFromXtime(this->time, acTime);
-        return string(acTime);
-    }
-
-    string toStringYYYYMMDD() {
-        pstring strall = this->toString();
-        return strall.substr(0, 10);
-    }
 
     //支持hlog，重写cout,前提是不能自动释放
     friend ostream &operator<<(ostream &os, ptime time) {
-        os << time.toString();
+        os << time.toStringTimeFull();
         return os;
     }
 
+    //反序列化
     friend istream &operator>>(istream &is, ptime &data) {
         string str;
         for (size_t i = 0; i < 23; i++)
@@ -2624,6 +2671,7 @@ public:
         return is;
     }
 
+    //运算符重载
     double operator-(const ptime &time2) {
         return clib_getDiffBetweenXtime(time2.time, this->time);
     }
@@ -2637,12 +2685,18 @@ public:
         return ptime(clib_getTimeSub(this->time, secs));
     }
 
-    //比较
     bool operator<(const ptime &tm) const {
         if (clib_getDiffBetweenXtime(tm.time, this->time) < 0)
             return true;
         else
             return false;
+    }
+
+    bool operator>(const ptime &tm) const {
+        if (clib_getDiffBetweenXtime(tm.time, this->time) < 0)
+            return false;
+        else
+            return true;
     }
 
     bool operator==(const ptime &tm) const {
@@ -3240,14 +3294,14 @@ public:
         hlog(strData);
         pstring strDataPathFull = strData + "task.dat";
         hlog(strDataPathFull);
-        pstring strDataForbk = strDataPathFull + tnow.toStringYYYYMMDD();
+        pstring strDataForbk = strDataPathFull + tnow.toStringDate();
         hlog(strDataForbk);
         pstring cmdbkdat = "cp " + strDataPathFull + " " + strDataForbk;
         hlog(cmdbkdat);
 
         //备份总控
         pstring cmdbkzk =
-                "cp /opt/sc/csgl/SCService/SCService /opt/sc/csgl/SCService/SCService" + tnow.toStringYYYYMMDD();
+                "cp /opt/sc/csgl/SCService/SCService /opt/sc/csgl/SCService/SCService" + tnow.toStringDate();
         hlog(cmdbkzk);
         pstring cmdall = "xk;" + cmdbkdat + ";" + cmdbkzk;
         hlog(cmdall);
@@ -3268,14 +3322,14 @@ public:
         hlog(strData);
         pstring strDataPathFull = strData + "task.dat";
         hlog(strDataPathFull);
-        pstring strDataForbk = strDataPathFull + tnow.toStringYYYYMMDD();
+        pstring strDataForbk = strDataPathFull + tnow.toStringDate();
         hlog(strDataForbk);
         pstring cmdbkdat = "cp " + strDataPathFull + " " + strDataForbk;
         hlog(cmdbkdat);
 
         //备份总控
         pstring cmdbkzk =
-                "cp /opt/sc/csgl/SCService/SCService /opt/sc/csgl/SCService/SCService" + tnow.toStringYYYYMMDD();
+                "cp /opt/sc/csgl/SCService/SCService /opt/sc/csgl/SCService/SCService" + tnow.toStringDate();
         hlog(cmdbkzk);
         pstring cmdall = "xk;" + cmdbkdat + ";" + cmdbkzk;
         hlog(cmdall);
