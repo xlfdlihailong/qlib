@@ -1,4 +1,5 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /tmp/tmp.Wv2m9H2AB0
--- Configuring done
--- Generating done
--- Build files have been written to: /tmp/tmp.Wv2m9H2AB0/cmake-build-debug-19216872225
+CMake executable not found: /usr/bin/cmake Configure
+
+Cannot get compiler information:
+	Unable to create temporary file
+	Unable to create temporary file

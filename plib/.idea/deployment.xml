@@ -71,7 +71,7 @@
       <paths name="4m (c6e30680-a706-4230-bcda-fd5eb0106142)">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/tmp/plib" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
@@ -88,6 +88,7 @@
             <mapping deploy="/tmp/tmp.rNEcPqRCQQ" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-4m3" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-4m3" />
           </excludedPaths>
         </serverdata>

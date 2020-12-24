@@ -1313,15 +1313,15 @@ unsigned char ptime::hour() {
     return this->time.uchHour;
 }
 
-unsigned char ptime::min() {
+unsigned char ptime::minute() {
     return this->time.uchMinute;
 }
 
-unsigned char ptime::sec() {
+unsigned char ptime::second() {
     return this->time.uchSecond;
 }
 
-unsigned short ptime::msec() {
+unsigned short ptime::msecond() {
     return this->time.ushMSecond;
 }
 
@@ -1471,7 +1471,11 @@ pstring ptime::getStringTimeFullNowNoSplit() {
 }
 
 pstring ptime::getStringTimeFullNowNoSplitNoMs() {
-    return plib::getTimeNowNoSplitNoMs();
+    ptime tnow;
+    pstring info=plib::toString(tnow);
+    pliststring lres=info.split("- :.");
+    pstring stres=lres.join("");
+    return stres.substr(0,stres.size()-3);
 }
 
 pstring ptime::getStringTimeNowNoSplit() {
@@ -1491,33 +1495,6 @@ pstring ptime::getStringDateNowNoSplit() {
     pliststring lres=info.split("-");
     return lres.join("");
 }
-
-
-
-
-
-
-
-
-//double ptime::operator -(const ptime &time2)
-//{
-//    //    hlog(time2);
-//    //    hlog(*this);
-//    //    HLOG_TIME(time2.time);
-//    //    HLOG_TIME(this->time);
-//    return clib_getDiffBetweenXtime(time2.time,this->time);
-//}
-
-//ptime ptime::operator +(const int64_t secs)
-//{
-//    return ptime(clib_getTimeAdd(this->time,secs));
-//}
-
-//ptime ptime::operator -(const int64_t secs)
-//{
-//    return ptime(clib_getTimeSub(this->time,secs));
-//}
-
 
 
 pdir::pdir(const char *path) {

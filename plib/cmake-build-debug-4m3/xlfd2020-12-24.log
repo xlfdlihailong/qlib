@@ -988,3 +988,89 @@
 [12:13:33.252]-[tid: 1338]-[mainplib.cpp:40][t3.toStringTimeNoMs() : 11:22:33]
 [12:13:33.252]-[tid: 1338]-[mainplib.cpp:41][t3.toStringTimeNoSplit() : 112233999]
 [12:13:33.252]-[tid: 1338]-[mainplib.cpp:42][t3.toStringTimeNoSplitNoMs() : 112233]
+[12:14:10.573]-[tid: 8944]-[clib.c:7455] acyear: 2020
+[12:14:10.573]-[tid: 8944]-[clib.c:7457] acmon: 12
+[12:14:10.573]-[tid: 8944]-[clib.c:7459] acday: 23
+[12:14:10.574]-[tid: 8944]-[clib.c:7461] achour: 11
+[12:14:10.574]-[tid: 8944]-[clib.c:7463] acmin: 22
+[12:14:10.574]-[tid: 8944]-[clib.c:7465] acsec: 33
+[12:14:10.574]-[tid: 8944]-[clib.c:7467] acM: 111
+[12:14:10.575]-[tid: 8944]-[mainplib.cpp:24][tnow : 2020-12-23 11:22:33.111]
+[12:14:10.575]-[tid: 8944]-[clib.c:7438] acyear: 2020
+[12:14:10.575]-[tid: 8944]-[clib.c:7440] acmon: 12
+[12:14:10.575]-[tid: 8944]-[clib.c:7442] acday: 23
+[12:14:10.576]-[tid: 8944]-[clib.c:7444] achour: 11
+[12:14:10.576]-[tid: 8944]-[clib.c:7446] acmin: 22
+[12:14:10.576]-[tid: 8944]-[clib.c:7448] acsec: 33
+[12:14:10.576]-[tid: 8944]-[clib.c:7450] acM: 000
+[12:14:10.576]-[tid: 8944]-[mainplib.cpp:26][t2 : 2020-12-23 11:22:33.000]
+[12:14:10.577]-[tid: 8944]-[clib.c:7472] acyear: 2020
+[12:14:10.577]-[tid: 8944]-[clib.c:7474] acmon: 01
+[12:14:10.577]-[tid: 8944]-[clib.c:7476] acday: 01
+[12:14:10.577]-[tid: 8944]-[clib.c:7478] achour: 11
+[12:14:10.577]-[tid: 8944]-[clib.c:7480] acmin: 22
+[12:14:10.578]-[tid: 8944]-[clib.c:7482] acsec: 33
+[12:14:10.578]-[tid: 8944]-[clib.c:7484] acM: 999
+[12:14:10.578]-[tid: 8944]-[mainplib.cpp:28][t3 : 2020-01-01 11:22:33.999]
+[12:14:10.578]-[tid: 8944]-[clib.c:7489] acyear: 2020
+[12:14:10.578]-[tid: 8944]-[clib.c:7491] acmon: 01
+[12:14:10.579]-[tid: 8944]-[clib.c:7493] acday: 01
+[12:14:10.579]-[tid: 8944]-[clib.c:7495] achour: 11
+[12:14:10.579]-[tid: 8944]-[clib.c:7497] acmin: 22
+[12:14:10.579]-[tid: 8944]-[clib.c:7499] acsec: 33
+[12:14:10.580]-[tid: 8944]-[clib.c:7501] acM: 000
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:30][t4 : 2020-01-01 11:22:33.000]
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:31][ptime::getStringTimeNow() : 12:14:10.580]
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:32][ptime::getStringTimeNowNoSplit() : 121410580]
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:33][ptime::getStringTimeNowNoSplitNoMs() : 121410]
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:34][ptime::getStringDateNowNoSplit() : 20201224]
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:36][t3.toStringTimeFull() : 2020-01-01 11:22:33.999]
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:37][t3.toStringDate() : 2020-01-01]
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:38][t3.toStringDateNoSplit() : 20200101]
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:39][t3.toStringTime() : 11:22:33.999]
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:40][t3.toStringTimeNoMs() : 11:22:33]
+[12:14:10.580]-[tid: 8944]-[mainplib.cpp:41][t3.toStringTimeNoSplit() : 112233999]
+[12:14:10.581]-[tid: 8944]-[mainplib.cpp:42][t3.toStringTimeNoSplitNoMs() : 112233]
+[13:02:18.980]-[tid:17200]-[clib.c:7455] acyear: 2020
+[13:02:18.980]-[tid:17200]-[clib.c:7457] acmon: 12
+[13:02:18.981]-[tid:17200]-[clib.c:7459] acday: 23
+[13:02:18.981]-[tid:17200]-[clib.c:7461] achour: 11
+[13:02:18.981]-[tid:17200]-[clib.c:7463] acmin: 22
+[13:02:18.981]-[tid:17200]-[clib.c:7465] acsec: 33
+[13:02:18.982]-[tid:17200]-[clib.c:7467] acM: 111
+[13:02:18.982]-[tid:17200]-[mainplib.cpp:24][tnow : 2020-12-23 11:22:33.111]
+[13:02:18.982]-[tid:17200]-[clib.c:7438] acyear: 2020
+[13:02:18.983]-[tid:17200]-[clib.c:7440] acmon: 12
+[13:02:18.983]-[tid:17200]-[clib.c:7442] acday: 23
+[13:02:18.983]-[tid:17200]-[clib.c:7444] achour: 11
+[13:02:18.984]-[tid:17200]-[clib.c:7446] acmin: 22
+[13:02:18.984]-[tid:17200]-[clib.c:7448] acsec: 33
+[13:02:18.984]-[tid:17200]-[clib.c:7450] acM: 000
+[13:02:18.984]-[tid:17200]-[mainplib.cpp:26][t2 : 2020-12-23 11:22:33.000]
+[13:02:18.984]-[tid:17200]-[clib.c:7472] acyear: 2020
+[13:02:18.984]-[tid:17200]-[clib.c:7474] acmon: 01
+[13:02:18.985]-[tid:17200]-[clib.c:7476] acday: 01
+[13:02:18.985]-[tid:17200]-[clib.c:7478] achour: 11
+[13:02:18.985]-[tid:17200]-[clib.c:7480] acmin: 22
+[13:02:18.985]-[tid:17200]-[clib.c:7482] acsec: 33
+[13:02:18.985]-[tid:17200]-[clib.c:7484] acM: 999
+[13:02:18.985]-[tid:17200]-[mainplib.cpp:28][t3 : 2020-01-01 11:22:33.999]
+[13:02:18.985]-[tid:17200]-[clib.c:7489] acyear: 2020
+[13:02:18.985]-[tid:17200]-[clib.c:7491] acmon: 01
+[13:02:18.986]-[tid:17200]-[clib.c:7493] acday: 01
+[13:02:18.986]-[tid:17200]-[clib.c:7495] achour: 11
+[13:02:18.986]-[tid:17200]-[clib.c:7497] acmin: 22
+[13:02:18.986]-[tid:17200]-[clib.c:7499] acsec: 33
+[13:02:18.986]-[tid:17200]-[clib.c:7501] acM: 000
+[13:02:18.986]-[tid:17200]-[mainplib.cpp:30][t4 : 2020-01-01 11:22:33.000]
+[13:02:18.986]-[tid:17200]-[mainplib.cpp:31][ptime::getStringTimeNow() : 13:02:18.986]
+[13:02:18.986]-[tid:17200]-[mainplib.cpp:32][ptime::getStringTimeNowNoSplit() : 130218986]
+[13:02:18.986]-[tid:17200]-[mainplib.cpp:33][ptime::getStringTimeNowNoSplitNoMs() : 130218]
+[13:02:18.986]-[tid:17200]-[mainplib.cpp:34][ptime::getStringDateNowNoSplit() : 20201224]
+[13:02:18.986]-[tid:17200]-[mainplib.cpp:36][t3.toStringTimeFull() : 2020-01-01 11:22:33.999]
+[13:02:18.986]-[tid:17200]-[mainplib.cpp:37][t3.toStringDate() : 2020-01-01]
+[13:02:18.987]-[tid:17200]-[mainplib.cpp:38][t3.toStringDateNoSplit() : 20200101]
+[13:02:18.987]-[tid:17200]-[mainplib.cpp:39][t3.toStringTime() : 11:22:33.999]
+[13:02:18.987]-[tid:17200]-[mainplib.cpp:40][t3.toStringTimeNoMs() : 11:22:33]
+[13:02:18.987]-[tid:17200]-[mainplib.cpp:41][t3.toStringTimeNoSplit() : 112233999]
+[13:02:18.987]-[tid:17200]-[mainplib.cpp:42][t3.toStringTimeNoSplitNoMs() : 112233]

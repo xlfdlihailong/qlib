@@ -30,5 +30,7 @@ void testptime()
     hlog(t3.toStringTimeFullNoMs());
     hlog(t3.toStringTimeFullNoSplit());
     hlog(t3.toStringTimeFullNoSplitNoMs());
+    hlog(ptime::getStringTimeFullNowNoSplitNoMs());
+
 }
 #endif //PLIB_TESTPTIME_H

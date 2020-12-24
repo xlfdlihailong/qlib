@@ -7,8 +7,8 @@
 
 int main() {
 //    testudp();
-//    testptime();
-    testptcp();
+    testptime();
+//    testptcp();
 
 
     return 0;

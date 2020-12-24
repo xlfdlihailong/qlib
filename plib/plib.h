@@ -2523,7 +2523,7 @@ public:
 
     //2020-09-16 00:44:27.854
     string toStringTimeFull() {
-        char acTime[20];
+        char acTime[30];
         clib_getStringFromXtime(this->time, acTime);
         return string(acTime);
     }
@@ -2648,11 +2648,11 @@ public:
 
     unsigned char hour();
 
-    unsigned char min();
+    unsigned char minute();
 
-    unsigned char sec();
+    unsigned char second();
 
-    unsigned short msec();
+    unsigned short msecond();
 
 
     //支持hlog，重写cout,前提是不能自动释放
