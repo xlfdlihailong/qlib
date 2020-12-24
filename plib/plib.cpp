@@ -1477,6 +1477,8 @@ pstring ptime::getTimeFullNowNoSplitNoMs() {
 
 
 
+
+
 //double ptime::operator -(const ptime &time2)
 //{
 //    //    hlog(time2);

@@ -2542,6 +2542,7 @@ public:
     //2020-09-16
     static pstring getDateNow();
 
+
     static double getDiff(clock_t t1, clock_t t2);
 
     static ptime getTimeFromSeconds(int64_t secs);
