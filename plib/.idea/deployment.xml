@@ -65,6 +65,7 @@
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-19216872225" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-19216872225" />
           </excludedPaths>
         </serverdata>
       </paths>

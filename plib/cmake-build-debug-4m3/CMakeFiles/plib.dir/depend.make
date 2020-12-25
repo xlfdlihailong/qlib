@@ -10,6 +10,7 @@ CMakeFiles/plib.dir/mainplib.cpp.o: ../plib.h
 CMakeFiles/plib.dir/mainplib.cpp.o: ../pmysql.h
 CMakeFiles/plib.dir/mainplib.cpp.o: ../ptcp.h
 CMakeFiles/plib.dir/mainplib.cpp.o: ../pudp.h
+CMakeFiles/plib.dir/mainplib.cpp.o: ../test/testserialization.h
 CMakeFiles/plib.dir/mainplib.cpp.o: ../test/testudp.h
 
 CMakeFiles/plib.dir/plib.cpp.o: ../clib.h

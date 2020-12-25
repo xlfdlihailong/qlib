@@ -11,7 +11,8 @@ SOURCES += mainplib.cpp \
     tinyxmlerror.cpp \
     tinyxmlparser.cpp \
     clib.c \
-    pudp.cpp
+    pudp.cpp \
+    ptcp.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -25,7 +26,13 @@ HEADERS += \
     pxml.h \
     tinystr.h \
     tinyxml.h \
-    pudp.h
+    pudp.h \
+    ptcp.h \
+    test/testptcp.h \
+    test/testptime.h \
+    test/testpudp.h \
+    test/testserialization.h \
+    test/testudp.h
 
 PRECOMPILED_HEADER =plib.h
 

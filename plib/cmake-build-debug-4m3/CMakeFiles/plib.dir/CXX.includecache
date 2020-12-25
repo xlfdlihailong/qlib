@@ -87,10 +87,12 @@ ptcp.h
 /tmp/tmp.rNEcPqRCQQ/ptcp.h
 test/testudp.h
 /tmp/tmp.rNEcPqRCQQ/test/testudp.h
-
-/tmp/tmp.rNEcPqRCQQ/plib.cpp
-plib.h
-/tmp/tmp.rNEcPqRCQQ/plib.h
+test/testptime.h
+/tmp/tmp.rNEcPqRCQQ/test/testptime.h
+test/testserialization.h
+/tmp/tmp.rNEcPqRCQQ/test/testserialization.h
+test/testptcp.h
+/tmp/tmp.rNEcPqRCQQ/test/testptcp.h
 
 /tmp/tmp.rNEcPqRCQQ/plib.h
 clib.h
@@ -134,10 +136,6 @@ thread
 functional
 -
 
-/tmp/tmp.rNEcPqRCQQ/pmysql.cpp
-pmysql.h
-/tmp/tmp.rNEcPqRCQQ/pmysql.h
-
 /tmp/tmp.rNEcPqRCQQ/pmysql.h
 plib.h
 /tmp/tmp.rNEcPqRCQQ/plib.h
@@ -146,17 +144,9 @@ mysql/mysql.h
 mysql/mysqld_error.h
 -
 
-/tmp/tmp.rNEcPqRCQQ/ptcp.cpp
-ptcp.h
-/tmp/tmp.rNEcPqRCQQ/ptcp.h
-
 /tmp/tmp.rNEcPqRCQQ/ptcp.h
 plib.h
 /tmp/tmp.rNEcPqRCQQ/plib.h
-
-/tmp/tmp.rNEcPqRCQQ/pudp.cpp
-pudp.h
-/tmp/tmp.rNEcPqRCQQ/pudp.h
 
 /tmp/tmp.rNEcPqRCQQ/pudp.h
 stdio.h
@@ -186,16 +176,8 @@ ws2tcpip.h
 plib.h
 /tmp/tmp.rNEcPqRCQQ/plib.h
 
-/tmp/tmp.rNEcPqRCQQ/pxml.cpp
-pxml.h
-/tmp/tmp.rNEcPqRCQQ/pxml.h
-
-/tmp/tmp.rNEcPqRCQQ/pxml.h
-tinyxml.h
-/tmp/tmp.rNEcPqRCQQ/tinyxml.h
-tinystr.h
-/tmp/tmp.rNEcPqRCQQ/tinystr.h
-plib.h
+/tmp/tmp.rNEcPqRCQQ/test/testserialization.h
+../plib.h
 /tmp/tmp.rNEcPqRCQQ/plib.h
 
 /tmp/tmp.rNEcPqRCQQ/test/testudp.h
@@ -203,30 +185,4 @@ plib.h
 /tmp/tmp.rNEcPqRCQQ/pudp.h
 ../ptcp.h
 /tmp/tmp.rNEcPqRCQQ/ptcp.h
-
-/tmp/tmp.rNEcPqRCQQ/tinystr.h
-assert.h
--
-string.h
--
-
-/tmp/tmp.rNEcPqRCQQ/tinyxml.h
-ctype.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-assert.h
--
-string
--
-iostream
--
-sstream
--
-tinystr.h
-/tmp/tmp.rNEcPqRCQQ/tinystr.h
 

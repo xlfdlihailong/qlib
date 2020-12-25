@@ -57,7 +57,8 @@ SOURCES       = mainplib.cpp \
 		tinyxmlerror.cpp \
 		tinyxmlparser.cpp \
 		clib.c \
-		pudp.cpp 
+		pudp.cpp \
+		ptcp.cpp 
 OBJECTS       = mainplib.o \
 		plib.o \
 		pmysql.o \
@@ -67,7 +68,8 @@ OBJECTS       = mainplib.o \
 		tinyxmlerror.o \
 		tinyxmlparser.o \
 		clib.o \
-		pudp.o
+		pudp.o \
+		ptcp.o
 DIST          = /opt/Qt5.4.0/5.4/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt5.4.0/5.4/gcc_64/mkspecs/common/shell-unix.conf \
 		/opt/Qt5.4.0/5.4/gcc_64/mkspecs/common/unix.conf \
@@ -189,7 +191,13 @@ DIST          = /opt/Qt5.4.0/5.4/gcc_64/mkspecs/features/spec_pre.prf \
 		pxml.h \
 		tinystr.h \
 		tinyxml.h \
-		pudp.h mainplib.cpp \
+		pudp.h \
+		ptcp.h \
+		test/testptcp.h \
+		test/testptime.h \
+		test/testpudp.h \
+		test/testserialization.h \
+		test/testudp.h mainplib.cpp \
 		plib.cpp \
 		pmysql.cpp \
 		pxml.cpp \
@@ -198,7 +206,8 @@ DIST          = /opt/Qt5.4.0/5.4/gcc_64/mkspecs/features/spec_pre.prf \
 		tinyxmlerror.cpp \
 		tinyxmlparser.cpp \
 		clib.c \
-		pudp.cpp
+		pudp.cpp \
+		ptcp.cpp
 QMAKE_TARGET  = plib
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = plib
@@ -505,8 +514,12 @@ compiler_clean:
 mainplib.o: mainplib.cpp pmysql.h \
 		plib.h \
 		clib.h \
+		ptcp.h \
+		test/testudp.h \
 		pudp.h \
-		ptrans.h
+		test/testptime.h \
+		test/testserialization.h \
+		test/testptcp.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainplib.o mainplib.cpp
 
 plib.o: plib.cpp 
@@ -540,6 +553,11 @@ pudp.o: pudp.cpp pudp.h \
 		plib.h \
 		clib.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o pudp.o pudp.cpp
+
+ptcp.o: ptcp.cpp ptcp.h \
+		plib.h \
+		clib.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ptcp.o ptcp.cpp
 
 ####### Install
 
