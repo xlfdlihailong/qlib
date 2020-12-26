@@ -1842,13 +1842,18 @@ public:
         }
     }
 
-    //这个改造是使map[key].可提示,并且没有key时不再插入,插入统一用add
+    //这个改造是使map[key].可提示,并且没有key时返回0,插入统一用add
     //便于维护列表
     T2 &operator[](T1 key) {
-        assert(this->containsKey(key));
-        return (T2 &) (this->at(key));
+//        assert(this->containsKey(key));
+        if(containsKey(key))
+            return (T2 &) (this->at(key));
+        else
+        {
+            T2 t2;
+            return t2;
+        }
     }
-
 
     bool containsKey(T1 t1) {
 //        plist<T1> listkey = this->getKeys();
